@@ -18,5 +18,6 @@ public class Room {
 	//방을 계약함
 	public void setRoomOwned() {
 		roomOwned = true;
+		System.out.println(roomNumber+"번 방 계약 완료");
 	}
 }

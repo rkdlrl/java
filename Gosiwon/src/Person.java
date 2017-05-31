@@ -1,3 +1,4 @@
+import java.util.List;
 
 public class Person {
 	int myRoomNumber;
@@ -7,19 +8,21 @@ public class Person {
 	}
 	
 	public void findMyRoom(Owner owner) {
-		Room room = owner.showEmptyRoom();
-		while(true) {
+		List<Room> rooms = owner.showEmptyRoom();
+		for(int i=0; i<rooms.size();i++) {
 			//방를 고르는 기준
-			if(room.getRoomNumber() == 105) {
-				myRoomNumber = room.getRoomNumber();
+			if(rooms.get(i).getRoomNumber() == 5) {
+				myRoomNumber = rooms.get(i).getRoomNumber();
+				System.out.println("사람 : "+myRoomNumber+"번 방이 맘에 드네요!");
 				break;
 			}
 			else
-				room = owner.showNextEmptyRoom();
+				rooms = owner.showEmptyRoom();
 		}
 	}
 	
 	public void contract(Owner owner) {
+		System.out.println("계약할께요");
 		owner.contractRoom(myRoomNumber);
 	}
 }

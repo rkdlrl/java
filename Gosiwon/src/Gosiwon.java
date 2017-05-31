@@ -16,8 +16,9 @@ public class Gosiwon {
 	public List<Room> getEmptyRooms() {
 		List<Room>emptyRooms = new ArrayList<Room>();
 		for(int i =0;i<roomQuntity;i++) {
-			if(rooms.get(i).isRoomFUll())
+			if(!(rooms.get(i).isRoomFUll())) {
 				emptyRooms.add(rooms.get(i));
+			}
 		}
 		return emptyRooms;
 	}
