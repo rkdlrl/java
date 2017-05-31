@@ -6,6 +6,8 @@ public class Director {
 		Gosiwon gosiwon = new Gosiwon(10);
 		Owner owner = new Owner();
 		owner.setGosiwon(gosiwon);
+		
+		//계약 시작
 		person.findMyRoom(owner);
 		person.contract(owner);
 	}

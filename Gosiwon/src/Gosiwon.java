@@ -4,12 +4,13 @@ import java.util.List;
 public class Gosiwon {
 	private List<Room>rooms = new ArrayList<Room>();
 	private int roomQuntity;
+	
 	public Gosiwon(int roomQuntity) {
-		System.out.println("°í½Ã¿ø »ı¼º");
+		System.out.println("ê³ ì‹œì› ìƒì„±");
 		this.roomQuntity = roomQuntity;
 		for(int i=1;i<=roomQuntity;i++)
 			rooms.add(new Room(i));
-		System.out.println("room "+roomQuntity+"°³ »ı¼º");
+		System.out.println("ë°© "+roomQuntity+"ê°œ ìƒì„±");
 	}
 	
 	public List<Room> getEmptyRooms() {

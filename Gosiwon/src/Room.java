@@ -2,18 +2,20 @@
 public class Room {
 	private int roomNumber;
 	private boolean roomOwned = false;
+	
 	public Room(int roomNumber) {
 		this.roomNumber = roomNumber;
-		System.out.println("¹æ¹øÈ£: "+this.roomNumber+" »ı¼º");
+		System.out.println(+this.roomNumber+"ë²ˆ ë°© ìƒì„± ì™„ë£Œ");
 	}
 	
 	public boolean isRoomFUll() {
 		return this.roomOwned;
 	}
+	
 	public int getRoomNumber() {
 		return this.roomNumber;
 	}
-
+	//ë°©ì„ ê³„ì•½í•¨
 	public void setRoomOwned() {
 		roomOwned = true;
 	}

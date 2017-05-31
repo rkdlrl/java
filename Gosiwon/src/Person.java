@@ -3,11 +3,13 @@ public class Person {
 	int myRoomNumber;
 	
 	public Person() {
-		System.out.println("»ç¶÷ »ı¼º");
+		System.out.println("ì‚¬ëŒ ìƒì„± ì™„ë£Œ");
 	}
+	
 	public void findMyRoom(Owner owner) {
 		Room room = owner.showEmptyRoom();
 		while(true) {
+			//ë°©ë¥¼ ê³ ë¥´ëŠ” ê¸°ì¤€
 			if(room.getRoomNumber() == 105) {
 				myRoomNumber = room.getRoomNumber();
 				break;
@@ -16,6 +18,7 @@ public class Person {
 				room = owner.showNextEmptyRoom();
 		}
 	}
+	
 	public void contract(Owner owner) {
 		owner.contractRoom(myRoomNumber);
 	}

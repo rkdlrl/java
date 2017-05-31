@@ -3,13 +3,13 @@ import java.util.List;
 public class Owner {
 	Gosiwon gosiwon;
 	List<Room>emptyRooms;
-	public Owner() {
-		
+	
+	public Owner() {	
 	}
 
 	public void setGosiwon(Gosiwon gosiwon) {
 		this.gosiwon = gosiwon;
-		System.out.println("°í½Ã¿ø ¼³Á¤¿Ï·á");
+		System.out.println("ê³ ì‹œì› ì„¸íŒ… ì™„ë£Œ");
 	}
 
 	public Room showEmptyRoom() {
