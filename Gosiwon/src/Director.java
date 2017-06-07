@@ -1,6 +1,6 @@
 
 public class Director {
-	String name = "director";
+	private String name = "director";
 	public void startSinario() {
 		System.out.println(name+": 시나리오 시작합니다.");
 		System.out.println(name+": person, gosiwon, owner 생성");

@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class Owner {
-	Gosiwon gosiwon;
+	public Gosiwon gosiwon;
 	private String name= "owner";
 	public Owner() {	
 		System.out.println(name+": 생성 완료");
