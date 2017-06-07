@@ -1,12 +1,13 @@
 
 public class Room {
 	private int roomNumber;
+	private String name = "room";
 	private Person roomOwned = null;
 	private boolean roomWindow = false;
 	private RoomSize roomSize = RoomSize.SMALL;
 	public Room(int roomNumber) {
 		this.roomNumber = roomNumber;
-		System.out.println(+this.roomNumber+"번 방 생성 완료");
+		System.out.println(name+": "+this.roomNumber+"번 방 생성 완료");
 	}
 	
 	public boolean isRoomFUll() {
@@ -17,7 +18,7 @@ public class Room {
 	//방을 계약함
 	public void setRoomOwned(Person person) {
 		roomOwned = person;
-		System.out.println(roomNumber+"번 방 입실 완료");
+		System.out.println(name+": "+roomNumber+"번 방 입실 완료");
 	}
 	
 	public boolean getRoomWindow() {

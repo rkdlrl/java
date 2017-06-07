@@ -4,13 +4,13 @@ import java.util.List;
 public class Gosiwon {
 	private List<Room>rooms = new ArrayList<Room>();
 	private int roomQuntity; //방 수량
-	
+	private String name = "gosiwon";
 	public Gosiwon(int roomQuntity) {
-		System.out.println("고시원 생성");
+		System.out.println(name+": 생성 완료");
 		this.roomQuntity = roomQuntity;
+		System.out.println(name+": 방 "+roomQuntity+"개 생성");
 		for(int i=1;i<=roomQuntity;i++)
 			rooms.add(new Room(i));
-		System.out.println("방 "+roomQuntity+"개 생성");
 		setRoomFeature();
 	}
 	
@@ -21,7 +21,7 @@ public class Gosiwon {
 	}
 
 	public List<Room> getEmptyRooms() {
-		System.out.println("빈 방을 찾습니다.");
+		System.out.println(name+": 빈 방을 찾습니다.");
 		List<Room>emptyRooms = new ArrayList<Room>();
 		for(Room room : rooms)
 			if(!(room.isRoomFUll()))
@@ -30,7 +30,7 @@ public class Gosiwon {
 	}
 
 	public void setRoomOwner(Person person) {
-		System.out.println("방아 입실 부탁해");
+		System.out.println(name+": 방아 입실 부탁해");
 		rooms.get(person.getMyRoomNumber()-1).setRoomOwned(person);
 	}
 
