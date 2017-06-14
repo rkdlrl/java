@@ -31,7 +31,7 @@ public class Gosiwon {
 
 	public void setRoomOwner(Person person) {
 		System.out.println(name+": 방아 입실 부탁해");
-		rooms.get(person.getMyRoomNumber()-1).setRoomOwned(person);
+		rooms.get(person.getMyRoomNumber()-1).setRoomOwned(person.getMyName());
 	}
 
 }

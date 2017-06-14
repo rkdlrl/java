@@ -2,7 +2,7 @@
 public class Room {
 	private int roomNumber;
 	private String name = "room";
-	private Person roomOwned = null;
+	private String roomOwnedName = null;
 	private boolean roomWindow = false;
 	private RoomSize roomSize = RoomSize.SMALL;
 	public Room(int roomNumber) {
@@ -11,13 +11,13 @@ public class Room {
 	}
 	
 	public boolean isRoomFUll() {
-		if(roomOwned == null) return false;
+		if(roomOwnedName.equals(null)) return false;
 		else return true;
 	}
 
 	//방을 계약함
-	public void setRoomOwned(Person person) {
-		roomOwned = person;
+	public void setRoomOwned(String personName) {
+		roomOwnedName = personName;
 		System.out.println(name+": "+roomNumber+"번 방 입실 완료");
 	}
 	

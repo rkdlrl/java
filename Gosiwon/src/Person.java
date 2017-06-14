@@ -34,4 +34,8 @@ public class Person {
 	public int getMyRoomNumber() {
 		return myRoomNumber;
 	}
+	
+	public String getMyName() {
+		return name;
+	}
 }
